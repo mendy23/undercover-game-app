@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../providers/game_provider.dart';
-import '../widgets/player_card.dart';
+import '../../data/providers/game_provider.dart';
+import '../components/player_card.dart';
 import 'game_room_screen.dart';
 
 class RoleWordDistributionScreen extends StatefulWidget {
-  const RoleDistributionScreen({super.key});
+  const RoleWordDistributionScreen({super.key});
 
   @override
-  State<RoleDistributionScreen> createState() => _RoleDistributionScreenState();
+  State<RoleWordDistributionScreen> createState() => _RoleDistributionScreenState();
 }
 
-class _RoleDistributionScreenState extends State<RoleDistributionScreen> {
+class _RoleDistributionScreenState extends State<RoleWordDistributionScreen> {
   int currentIndex = 0;
   bool revealed = false;
 

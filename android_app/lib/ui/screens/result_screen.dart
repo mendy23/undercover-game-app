@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../providers/game_provider.dart';
+import '../../data/providers/game_provider.dart';
 import 'game_room_screen.dart';
 import 'player_setup_screen.dart';
 

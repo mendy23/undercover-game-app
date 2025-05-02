@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../providers/game_provider.dart';
-import '../widgets/player_tile.dart';
+import '../../data/providers/game_provider.dart';
+import '../components/player_tile.dart';
 import 'voting_screen.dart';
 
 class GameRoomScreen extends StatelessWidget {
