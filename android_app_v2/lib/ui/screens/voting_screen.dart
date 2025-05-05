@@ -20,6 +20,7 @@ class _VotingScreenState extends State<VotingScreen> {
   int _currentVoterIndex = 0;
   bool _showCard = true;
   int? _selectedPlayerToVoteFor;
+  final ScrollController _scrollController = ScrollController();
 
   @override
   void initState() {
@@ -130,8 +131,11 @@ class _VotingScreenState extends State<VotingScreen> {
                   ? PlayerCard(
                 key: ValueKey(currentVoter.id),
                 player: currentVoter,
-                content: Flexible(
+                content: Scrollbar(
+                  controller: _scrollController,
+                  thumbVisibility: true,
                   child: SingleChildScrollView(
+                    controller: _scrollController,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -164,6 +168,7 @@ class _VotingScreenState extends State<VotingScreen> {
                     ),
                   ),
                 ),
+
                 buttonText: 'Skip',
                 onButtonPressed: _nextVoter,
               )
