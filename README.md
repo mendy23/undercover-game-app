@@ -12,7 +12,7 @@
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/mendy23/uncover-game-app.git
-   cd uncover-game-app
+   cd uncover-game-app/android_app_v2
    ```
 
 2. **Open in Your Preferred IDE**
