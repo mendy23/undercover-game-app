@@ -53,5 +53,5 @@ The app consists of 5 main screens:
 2. Enter names and receive assigned roles and words → Start the game - Proceed to Game Room Screen
 3. Players describe their words verbally → Proceed to Voting Screen
 4. Each player votes secretly → View results - Proceed to Result Screen
-5. If game continues: Return to Game Room Screen
-   If game ends: Return to Home Setup Screen for a new game
+5.1. If game continues: Return to Game Room Screen
+5.2. If game ends: Return to Home Setup Screen for a new game
