@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import '../core/word_pairs.dart';
+import '../../core/word_pairs.dart';
 import '../models/player.dart';
 
 class GameProvider with ChangeNotifier {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../data/core/game_config.dart';
+import '../../core/game_config.dart';
 
 // Player count selector is a UI component which users can set the number of players for the game
 class PlayerCountSelector extends StatelessWidget {

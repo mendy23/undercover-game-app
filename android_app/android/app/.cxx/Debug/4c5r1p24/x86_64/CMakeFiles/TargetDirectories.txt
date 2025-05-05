@@ -1,2 +1,0 @@
-C:/Users/mendy/Documents/uncover-game-app/android_app/android/app/.cxx/Debug/4c5r1p24/x86_64/CMakeFiles/edit_cache.dir
-C:/Users/mendy/Documents/uncover-game-app/android_app/android/app/.cxx/Debug/4c5r1p24/x86_64/CMakeFiles/rebuild_cache.dir

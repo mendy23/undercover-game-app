@@ -19,7 +19,10 @@ class UndercoverApp extends StatelessWidget {
     return MaterialApp(
       title: 'Undercover Game',
       theme: ThemeData.light(),
-      home: const HomeSetupScreen(),
+      home: WillPopScope(
+        onWillPop: () async => false, // Disable back button
+        child: const HomeSetupScreen(),
+      ),
     );
   }
 }

@@ -16,9 +16,6 @@ class GameRoomScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final provider = Provider.of<GameProvider>(context);
-    final undercoverLeft = provider.players
-        .where((p) => p.role == Role.undercover && !p.isEliminated)
-        .length;
 
     return Scaffold(
       appBar: AppBar(title: const Text('Game Room')),
@@ -56,7 +53,7 @@ class GameRoomScreen extends StatelessWidget {
               border: Border.all(color: Colors.red),
             ),
             child: Text(
-              'Remaining infiltrators: $undercoverLeft',
+              'The infiltrator is still among you!',
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

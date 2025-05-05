@@ -52,13 +52,18 @@ class ResultScreen extends StatelessWidget {
                 onPressed: () {
                   if (isGameOver) {
                     gameProvider.resetGame();
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(builder: (_) => HomeSetupScreen()),
+                          (route) => false, // This removes all previous routes
+                    );
                   } else {
                     gameProvider.resetVotes();
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (_) => destination),
+                    );
                   }
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (_) => destination),
-                  );
                 },
                 child: Text(buttonText),
               ),
