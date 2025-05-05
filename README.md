@@ -11,7 +11,7 @@
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/mendy23/uncover-game-app.git
+   git clone https://github.com/mendy23/undercover-game-app.git
    cd uncover-game-app/android_app_v2
    ```
 
