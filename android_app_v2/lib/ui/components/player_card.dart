@@ -30,24 +30,24 @@ class PlayerCard extends StatelessWidget {
           width: 300,
           height: 600,
           padding: const EdgeInsets.all(20),
-          child: Center(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  player.name.isNotEmpty ? player.name : 'Player ${player.id + 1}',
-                  style: const TextStyle(fontSize: 18, color: Colors.black),
-                ),
-                const SizedBox(height: 16),
-                content,
-                const SizedBox(height: 16),
-                if (onButtonPressed != null)
-                  ElevatedButton(onPressed: onButtonPressed, child: Text(buttonText)),
-              ],
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                player.name.isNotEmpty ? player.name : 'Player ${player.id + 1}',
+                textAlign: TextAlign.center,
+                style: const TextStyle(fontSize: 18, color: Colors.black),
+              ),
+              const SizedBox(height: 16),
+
+              Expanded(child: content),
+
+              const SizedBox(height: 16),
+              if (onButtonPressed != null)
+                ElevatedButton(onPressed: onButtonPressed, child: Text(buttonText)),
+            ],
           ),
-        )
+        ),
       ),
     );
   }
